@@ -8,12 +8,14 @@ const UserAuth = () => {
   const [users,setUsers] = useState([]);
 
 
-
+// handleLogin
  const handleLogin = ()=>{
    if(isRegister){
      if(isRegister){
       const user =   users.find((u)=>u.username ===username)
-        if(user){
+      const pass = users.find((u)=>u.password === password)
+        if(user && pass){
+
             setUserLogged(true)
         }
      }
@@ -25,11 +27,13 @@ const UserAuth = () => {
    }
  }
 
+//  handleLogou
  const handleLogout = () =>{
     setUserLogged(false);  
  }
   return (
     <>
+    {/* add operator to using short cut of if else */}
       {userLogged ? (
         <>
           <h1>Welcome : {username}</h1>
