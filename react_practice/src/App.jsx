@@ -1,5 +1,6 @@
 import "./App.css";
 import ImageUpload from "./task/ImageUpload";
+import Search from "./task/Search";
 import UserAuth from "./task/UserAuth";
 
 function App() {
@@ -40,7 +41,8 @@ const randomQuote = Math.floor(Math.random()*quotes.length);
   {/* <h1>Quote Generator</h1> */}
   {/* {quotes[randomQuote]}
   <ImageUpload /> */}
-  <UserAuth />
+  {/* <UserAuth /> */}
+  <Search />
   </>;
 }
 
