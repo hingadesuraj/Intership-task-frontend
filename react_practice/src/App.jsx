@@ -1,5 +1,6 @@
 import "./App.css";
 import ImageUpload from "./task/ImageUpload";
+import Pagination from "./task/Pagination";
 import Search from "./task/Search";
 import UserAuth from "./task/UserAuth";
 
@@ -42,7 +43,8 @@ const randomQuote = Math.floor(Math.random()*quotes.length);
   {/* {quotes[randomQuote]}
   <ImageUpload /> */}
   {/* <UserAuth /> */}
-  <Search />
+  {/* <Search /> */}
+ <Pagination />
   </>;
 }
 
