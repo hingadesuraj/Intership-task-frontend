@@ -1,8 +1,9 @@
 import "./App.css";
+import ImageUpload from "./task/ImageUpload";
 
 function App() {
   
- 
+//  Random Quote
 const quotes = [
     "The only way to do great work is to love what you do. - Steve Jobs",
     "In the middle of difficulty lies opportunity. - Albert Einstein",
@@ -37,6 +38,7 @@ const randomQuote = Math.floor(Math.random()*quotes.length);
   return <>
   <h1>Quote Generator</h1>
   {quotes[randomQuote]}
+  <ImageUpload />
   </>;
 }
 
